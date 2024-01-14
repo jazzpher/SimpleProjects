@@ -8,14 +8,14 @@ def list_tasks():
     if tasks:
         print("Tasks:")
         for i, task in enumerate(tasks, 1):
-            print(f"{i}. {task}")
+            print(str(i) + ". " + task)
     else:
         print("No tasks found.")
 
 def complete_task(task_index):
     if 1 <= task_index <= len(tasks):
         completed_task = tasks.pop(task_index - 1)
-        print(f"Task '{completed_task}' marked as completed.")
+        print("Task '" + completed_task + "' marked as completed.")
     else:
         print("Invalid task index.")
 
