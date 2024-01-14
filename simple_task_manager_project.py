@@ -1,12 +1,9 @@
-# Define an empty task list
 tasks = []
 
-# Function to add a task
 def add_task(task):
     tasks.append(task)
     print("Task added successfully!")
 
-# Function to list all tasks
 def list_tasks():
     if tasks:
         print("Tasks:")
@@ -15,7 +12,6 @@ def list_tasks():
     else:
         print("No tasks found.")
 
-# Function to mark a task as completed
 def complete_task(task_index):
     if 1 <= task_index <= len(tasks):
         completed_task = tasks.pop(task_index - 1)
@@ -23,7 +19,6 @@ def complete_task(task_index):
     else:
         print("Invalid task index.")
 
-# Main loop
 while True:
     print("\nTask Manager Menu:")
     print("1. Add Task")
